@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+	<meta property="fb:app_id" content="856551954441874">
+	<meta property="og:type" content="article" />
+	<meta property="og:image" content="網址/images/圖片名稱.jpg"/>
+	<meta property="og:image:secure_url" content="網址/images/圖片名稱.jpg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+	<meta name="keywords" content="關鍵字">
+	<meta name="description" content="網站描述">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<title>紅屋瓦韓國料理</title>
+    <script>
+
+function initialize() {
+  var fenway = {lat: 24.11468149564706, lng:120.66050034506623};
+  var map = new google.maps.Map(document.getElementById('map'), {
+    center: fenway,
+    zoom: 14
+  });
+  var panorama = new google.maps.StreetViewPanorama(
+      document.getElementById('pano'), {
+        position: fenway,
+        pov: {
+          heading: 120.66050034506623,
+          pitch: -6.071758236414055
+        }
+      });
+  map.setStreetView(panorama);
+}
+
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?callback=initialize">
+    </script>
+</head>
+<style>
+
+	html,body{
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+	font-size:100%;
+	background-image: url("background.png");
+	
+	
+}
+	
+	div.top{
+		text-align:center;
+		padding: 5px;
+		font-family:Microsoft YaHei UI;
+		font-size: 40px;
+		background:#FF6A6A
+	}		
+	
+	div.middle{
+		text-align: center;
+		font-family:Microsoft YaHei UI;
+		font-size: 20px;
+		
+	}
+	
+	ul li{
+		list-style-type:none;
+	}
+	
+	div.menu{
+		text-align: center;
+		font-family: Microsoft YaHei UI;
+		font-size: 20px;
+		
+		
+		
+	}
+	
+  #map, #pano {
+         
+        height: 100%;
+        width: 45%;
+      }
+
+	div.bottom{
+		padding-top: 10px;
+		padding-bottom: 10px;
+		font-family:Microsoft YaHei UI;
+		font-size: 20px;
+		text-align: center;
+		background: #FF6A6A
+		
+	}	
+	
+	div.chef{
+	position:absolute;
+	padding-top: 30px;
+	padding-left: 350px;
+	top: 10px;
+	width:5%;
+	}
+	
+</style>
+
+<body>
+     
+<div class="top">
+	<p>紅屋瓦韓國料理</p>
+ </div>
+ 
+ <div class="chef">
+     <img src="south-korea.png">
+     </div>
+
+ 
+ <div class="menu">
+ <hr style="border:1px dashed #000; height:1px">
+ <p>菜單Menu</p>
+ <hr style="border:1px dashed #000; height:1px">
+ <img src="紅屋瓦菜單.jpg" width="50%">
+</div> 
+
+<div class="middle">    
+	<ul>
+ 		<hr style="border:1px dashed #000; height:1px">
+  		<li>營業時間：11:00–21:00</li>
+		<li>電話： 04-22653581</li>
+		<li>地址： 402台中市南區工學六街110號</li>
+		<hr style="border:1px dashed #000; height:1px">
+	</ul>
+</div>
+<div id="map" style="display:block; margin:auto;">
+</div>
+<div id="pano" style="display:block; margin:auto;"></div> 
+   
+   <div class="bottom">
+	<p>Enjoy your meal everyday_</p>
+    </div>
+    
+ 
+    
+</body>
+</html>
