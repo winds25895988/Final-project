@@ -102,9 +102,11 @@ function initialize() {
 	width:5%;
 	}
 	
-</style>
-   
+	</style>
 
+	<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBT1eN12E4wECMu9A_fu4qs3K0Hr5CRTyY&callback=initialize">
+	</script>
 <body>
      
 <div class="top">
@@ -131,18 +133,18 @@ function initialize() {
 		<li>地址： 402台中市南區仁義街122號</li>
 		<hr style="border:1px dashed #000; height:1px">
 	</ul>
-	</div>
+</div>
+<div id="map" style="display:block; margin:auto;">
+</div>
+<div id="pano" style="display:block; margin:auto;"></div> 
+ 
    
-   <div class="bottom">
+<div class="bottom">
 	<p>Enjoy your meal everyday_</p>
-    </div>
+</div>
   
-  	<div id="map"></div>
-    <div id="pano"></div>
     
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBT1eN12E4wECMu9A_fu4qs3K0Hr5CRTyY&callback=initialize">
-    </script>
+    
 
     
 </body>
